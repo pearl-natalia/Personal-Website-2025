@@ -140,7 +140,7 @@ export default function Home() {
         {/* Header */}
         <header className="mb-15">
           <h1 className={`text-5xl font-light mb-8 ${headerFont.className}`}>
-            hi, i'm Pearl
+            hi, i&apos;m Pearl
           </h1>
           <div className="max-w-3xl space-y-4 text-lg text-gray-800">
             <p>
@@ -149,7 +149,7 @@ export default function Home() {
               person) — especially with ML
             </p>
             <p>
-              i'm currently studying software engineering at{" "}
+              i&apos;m currently studying software engineering at{" "}
               <a
                 href="https://se-webring.xyz/"
                 target="_blank"
