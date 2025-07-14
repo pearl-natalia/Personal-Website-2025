@@ -140,12 +140,16 @@ export default function Home() {
         {/* Header */}
         <header className="mb-15">
           <h1 className={`text-5xl font-light mb-8 ${headerFont.className}`}>
-            Pearl Natalia
+            hi, i'm Pearl
           </h1>
           <div className="max-w-3xl space-y-4 text-lg text-gray-800">
-            <p>building all things ai/ml</p>
             <p>
-              currently studying software engineering at{" "}
+              i love to learn by building, automate the boring stuff, and figure
+              things out the hard way (then making it easier for the next
+              person) — especially with ML
+            </p>
+            <p>
+              i'm currently studying software engineering at{" "}
               <a
                 href="https://se-webring.xyz/"
                 target="_blank"
@@ -153,7 +157,7 @@ export default function Home() {
               >
                 UWaterloo
               </a>
-              {/* , and am studying abroad in Spain at{" "}
+              {/* and will be studying abroad in Spain at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
