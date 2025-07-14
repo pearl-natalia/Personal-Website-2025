@@ -12,72 +12,79 @@ import {
 // E! change font here to name
 import { Shantell_Sans } from "next/font/google";
 
-// one more update here
 const headerFont = Shantell_Sans({ weight: "400", subsets: ["latin"] });
 
-// Data for work experience and projects
+// Data for work experience
 const workExperience = [
   // {
   //   logo: "images/amazon-logo.png",
   //   hoverLogo: "images/amazon-logo-hover.png",
-  //   title: "Software Engineer Intern",
-  //   role: "working on robotics",
-  //   period: "Incoming Summer 2026",
+  //   title: "software engineer intern",
+  //   role: "working on robots",
+  //   period: "incoming summer 2026",
   //   company: "Amazon Robotics",
+  //   link: "https://www.aboutamazon.com/news/tag/robotics",
   // },
   // {
   //   logo: "images/globe-logo.png",
   //   hoverLogo: "images/globe-logo-hover.png",
-  //   title: "Machine Learning Intern",
+  //   title: "machine learning intern",
   //   role: "working on agents for news outlets",
-  //   period: "Incoming Fall 2025",
+  //   period: "incoming fall 2025",
   //   company: "The Globe & Mail",
+  //   link: "https://www.theglobeandmail.com/",
   // },
   {
     Icon: Car,
-    title: "Machine Learning Engineer",
+    title: "machine learning engineer",
     role: "working on perception for a self-driving car design team",
-    period: "Present",
+    period: "present",
     company: "WATonomous",
+    link: "https://www.watonomous.ca/",
   },
   {
     logo: "images/legacy-logo.png",
     hoverLogo: "images/legacy-logo-hover.png",
-    title: "Machine Learning Engineer",
+    title: "machine learning engineer",
     role: "contracted with a startup to build tools that give clinicians real-time feedback during appointments",
-    period: "May 2025",
+    period: "may 2025",
     company: "Legacy",
+    link: "https://www.legacytheapp.com/",
   },
   {
     logo: "images/mimrr-logo.png",
     hoverLogo: "images/mimrr-logo-hover.png",
-    title: "Machine Learning Engineer",
-    role: "building agents to automate product development processes",
+    title: "machine learning engineer",
+    role: "built agents to automate product management tasks",
     period: "2024 - 2025",
     company: "Mimrr",
+    link: "https://www.linkedin.com/company/mimrrhq/about/",
   },
   {
     logo: "images/pcc-logo.png",
     hoverLogo: "images/pcc-logo-hover.png",
-    title: "Software Engineer Intern",
+    title: "software engineer intern",
     role: "optimized EHR infra & worked on distributed database systems to handle millions of patient records",
-    period: "Winter 2025",
+    period: "winter 2025",
     company: "PointClickCare",
+    link: "https://pointclickcare.com/products/",
   },
   {
     logo: "images/generis-logo.png",
     hoverLogo: "images/generis-logo-hover.png",
-    title: "Web Developer Intern",
+    title: "web developer intern",
     role: "built websites & automated web-dev processes with ML",
-    period: "Summer 2024",
+    period: "summer 2024",
     company: "Generis",
+    link: "https://generisgp.com/",
   },
 ];
 
+// Data for projects
 const projects = [
   {
     Icon: Divide,
-    name: "MathOCR",
+    name: "mathOCR",
     link: "https://github.com/pearl-natalia/MathOCR/blob/main/README.md",
     description:
       "a low-level OCR implementation to calculate handwritten equations via neural networks and image processing",
@@ -85,15 +92,15 @@ const projects = [
   },
   {
     Icon: Cctv,
-    name: "Siren",
+    name: "siren",
     link: "https://github.com/pearl-natalia/Siren/blob/master/README.md",
     description:
-      "an AI-powered dash cam to monitor driving behavior using computer vision and geolocation processing",
+      "an powered dash cam to monitor driving behavior using computer vision and geolocation processing",
     tech: "embedded AI • YOLOv8",
   },
   {
     Icon: BookCopy,
-    name: "UI Cloner",
+    name: "UI cloner",
     link: "https://github.com/pearl-natalia/component-generation",
     description:
       "an extension to recreate UI components using an image render, DOM HTML/CSS and prompt chaining",
@@ -101,7 +108,7 @@ const projects = [
   },
   {
     Icon: Shield,
-    name: "Guardian",
+    name: "guardian",
     link: "https://devpost.com/software/group-123",
     description:
       "a multimodal wearable that sends reports to 911 by analyzing live video, audio and location data with CNNs",
@@ -109,16 +116,16 @@ const projects = [
   },
   {
     Icon: HandCoins,
-    name: "SPAVE",
+    name: "spave",
     link: "https://github.com/pearl-natalia/SPAVE/blob/main/README.md",
     description:
-      "a Google Play-store published budgeting app to optimize user savings when shopping",
+      "a Google Play-Store published budgeting app to optimize user savings when shopping",
     tech: "budgeting app • Android development",
   },
   {
     logo: "images/autorithm.png",
     hoverLogo: "images/autorithm-hover.png",
-    name: "Autorithm",
+    name: "autorithm",
     link: "https://devpost.com/software/handsfree-y7lsbq",
     description:
       "an EV3 robot to automate food-package assembly via colour and ultrasonic sensors",
@@ -141,16 +148,17 @@ export default function Home() {
               currently studying software engineering at{" "}
               <a
                 href="https://se-webring.xyz/"
-                className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
+                target="_blank"
+                className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors "
               >
                 UWaterloo
               </a>
-              {/* , and will be studying abroad in Spain at{" "}
+              {/* , and am studying abroad in Spain at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
               >
-                Tecnun
+                UNavarra
               </a>
               this Winter */}
             </p>
@@ -159,26 +167,26 @@ export default function Home() {
           {/* Contact Links */}
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="mailto:pearlnnatalia@gmail.com"
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-400 hover:text-white transition-colors text-base"
+              href="https://www.linkedin.com/in/pearlnatalia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-400 hover:text-white transition-colors text-base ${headerFont.className}`}
             >
-              <Mail className="w-4 h-4" /> email
+              <Linkedin className="w-4 h-4" /> linkedin
             </a>
             <a
               href="https://github.com/pearl-natalia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-400 hover:text-white transition-colors text-base"
+              className={`flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-400 hover:text-white transition-colors text-base ${headerFont.className}`}
             >
               <Github className="w-4 h-4" /> github
             </a>
             <a
-              href="https://www.linkedin.com/in/pearlnatalia/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-400 hover:text-white transition-colors text-base"
+              href="mailto:pearlnnatalia@gmail.com"
+              className={`flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-400 hover:text-white transition-colors text-base ${headerFont.className}`}
             >
-              <Linkedin className="w-4 h-4" /> linkedin
+              <Mail className="w-4 h-4" /> email
             </a>
           </div>
         </header>
@@ -190,8 +198,16 @@ export default function Home() {
           </h2>
           <div className="space-y-8">
             {workExperience.map((work, idx) => {
-              const { Icon, logo, hoverLogo, title, role, company, period } =
-                work;
+              const {
+                Icon,
+                logo,
+                hoverLogo,
+                title,
+                role,
+                company,
+                period,
+                link,
+              } = work;
               return (
                 <div
                   key={idx}
@@ -224,7 +240,7 @@ export default function Home() {
                         {role}
                       </p>
                       <a
-                        href={`https://${company}`}
+                        href={link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="italic group-hover:text-blue-700 hover:underline transition-colors text-sm"
@@ -258,6 +274,7 @@ export default function Home() {
                 >
                   {logo ? (
                     <>
+                      {" "}
                       <img
                         src={logo}
                         alt={name}
@@ -299,7 +316,10 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="pt-8 sm:pt-16 pb-8 sm:pb-16 border-t border-gray-200 text-sm text-gray-600 text-center">
+        {/* Footer */}
+        <footer
+          className={`pt-8 sm:pt-16 pb-8 sm:pb-16 border-t border-gray-200 text-sm text-gray-600 text-center ${headerFont.className}`}
+        >
           <p>i love meeting new people — feel free to reach out :)</p>
         </footer>
       </div>

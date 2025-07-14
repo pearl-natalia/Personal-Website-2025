@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/images/preview.png",
         width: 1200,
         height: 630,
-        alt: "Preview of Pearl Natalia’s portfolio",
+        alt: "Preview of Pearl Natalia's portfolio",
       },
     ],
   },
