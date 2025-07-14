@@ -2,7 +2,6 @@ import {
   Mail,
   Github,
   Linkedin,
-  Car,
   Divide,
   Cctv,
   BookCopy,
@@ -35,7 +34,8 @@ const workExperience = [
   //   link: "https://www.theglobeandmail.com/",
   // },
   {
-    Icon: Car,
+    logo: "images/wato-logo.png",
+    hoverLogo: "images/wato-logo-hover.png",
     title: "machine learning engineer",
     role: "working on perception for a self-driving car design team",
     period: "present",
@@ -162,14 +162,13 @@ export default function Home() {
                   className="ml-2 w-5 h-5"
                 />
               </a>
-              {/* and will be studying abroad in Spain at{" "}
+              {/* and am studying abroad in Spain this winter at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
               >
                 UNavarra
-              </a>
-              this Winter */}
+              </a> */}
             </p>
           </div>
 
@@ -207,23 +206,15 @@ export default function Home() {
           </h2>
           <div className="space-y-8">
             {workExperience.map((work, idx) => {
-              const {
-                Icon,
-                logo,
-                hoverLogo,
-                title,
-                role,
-                company,
-                period,
-                link,
-              } = work;
+              const { logo, hoverLogo, title, role, company, period, link } =
+                work;
               return (
                 <div
                   key={idx}
                   className="flex flex-col sm:flex-row justify-between items-start group hover:text-blue-700 transition-colors"
                 >
                   <div className="flex items-start">
-                    {logo ? (
+                    {
                       <>
                         <img
                           src={logo}
@@ -238,9 +229,7 @@ export default function Home() {
                           />
                         )}
                       </>
-                    ) : Icon ? (
-                      <Icon className="w-6 h-6 text-gray-500 group-hover:text-blue-700 transition-colors flex-shrink-0 mt-1 mr-4" />
-                    ) : null}
+                    }
                     <div>
                       <h3 className="text-xl font-medium mb-1 group-hover:text-blue-700 transition-colors">
                         {title}
