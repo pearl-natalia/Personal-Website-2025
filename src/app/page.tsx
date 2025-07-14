@@ -153,9 +153,14 @@ export default function Home() {
               <a
                 href="https://se-webring.xyz/"
                 target="_blank"
-                className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors "
+                className="inline-flex items-center mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
               >
                 UWaterloo
+                <img
+                  src="images/black-goose.png"
+                  alt="Goose icon"
+                  className="ml-2 w-5 h-5"
+                />
               </a>
               {/* and will be studying abroad in Spain at{" "}
               <a
