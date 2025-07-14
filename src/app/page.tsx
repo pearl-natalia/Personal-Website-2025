@@ -306,7 +306,7 @@ export default function Home() {
                     <p className="text-gray-700 group-hover:text-blue-700 mb-1 transition-colors">
                       {description}
                     </p>
-                    <div className="text-gray-600 group-hover:text-blue-700 font-mono text-xs transition-colors">
+                    <div className="text-gray-600 group-hover:text-blue-700 font-mono text-xs transition-colors italic">
                       {tech}
                     </div>
                   </div>
