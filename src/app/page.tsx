@@ -18,64 +18,64 @@ const workExperience = [
   // {
   //   logo: "images/amazon-logo.png",
   //   hoverLogo: "images/amazon-logo-hover.png",
-  //   title: "software engineer intern",
-  //   role: "working on robots",
+  //   title: "Amazon Robotics",
+  //   role: "making robots move",
   //   period: "incoming summer 2026",
-  //   company: "Amazon Robotics • internship",
+  //   company: "software developer • internship",
   //   link: "https://www.aboutamazon.com/news/tag/robotics",
   // },
   // {
   //   logo: "images/globe-logo.png",
   //   hoverLogo: "images/globe-logo-hover.png",
-  //   title: "machine learning intern",
-  //   role: "working on agents for news outlets",
+  //   title: "The Globe & Mail",
+  //   role: "building agents for news outlets",
   //   period: "incoming fall 2025",
-  //   company: "The Globe & Mail • internship",
+  //   company: "machine learning • internship",
   //   link: "https://www.theglobeandmail.com/",
   // },
   {
     logo: "images/wato-logo.png",
     hoverLogo: "images/wato-logo-hover.png",
-    title: "machine learning engineer",
+    title: "WATonomous",
     role: "working on perception for a self-driving car design team",
     period: "present",
-    company: "WATonomous • design team",
+    company: "machine learning • design team",
     link: "https://www.watonomous.ca/",
   },
   {
     logo: "images/legacy-logo.png",
     hoverLogo: "images/legacy-logo-hover.png",
-    title: "machine learning engineer",
+    title: "Legacy",
     role: "worked on models that give clinicians real-time feedback during appointments",
     period: "may 2025",
-    company: "Legacy • contract",
+    company: "machine learning • contract",
     link: "https://www.legacytheapp.com/",
   },
   {
     logo: "images/mimrr-logo.png",
     hoverLogo: "images/mimrr-logo-hover.png",
-    title: "machine learning engineer",
+    title: "Mimrr",
     role: "built agents to automate product management tasks",
     period: "2024 - 2025",
-    company: "Mimrr • part-time",
+    company: "machine learning • part-time",
     link: "https://www.linkedin.com/company/mimrrhq/about/",
   },
   {
     logo: "images/pcc-logo.png",
     hoverLogo: "images/pcc-logo-hover.png",
-    title: "software engineer intern",
+    title: "PointClickCare",
     role: "optimized EHR infra & worked on distributed database systems to handle millions of patient records",
     period: "winter 2025",
-    company: "PointClickCare • internship",
+    company: "software developer • internship",
     link: "https://pointclickcare.com/products/",
   },
   {
     logo: "images/generis-logo.png",
     hoverLogo: "images/generis-logo-hover.png",
-    title: "web developer intern",
+    title: "Generis Global Partners",
     role: "built websites & automated web-dev processes with ML",
     period: "summer 2024",
-    company: "Generis • internship",
+    company: "web developer • internship",
     link: "https://generisgp.com/",
   },
 ];
@@ -144,11 +144,6 @@ export default function Home() {
           </h1>
           <div className="max-w-3xl space-y-4 text-lg text-gray-800">
             <p>
-              i love to learn by building, automate the boring stuff, and figure
-              things out the hard way (then making it easier for the next
-              person) — especially with ML
-            </p>
-            <p>
               i study software engineering at{" "}
               <a
                 href="https://se-webring.xyz/"
@@ -162,7 +157,7 @@ export default function Home() {
                   className="ml-2 w-5 h-5"
                 />
               </a>
-              {/* and am studying abroad in Spain this winter at{" "}
+              {/* and will be studying abroad in Spain this winter at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 target="_blank"
@@ -176,6 +171,22 @@ export default function Home() {
                 />
               </a> */}
             </p>
+            <p>
+              i love to learn by building, automate the boring stuff, and figure
+              things out the hard way (then making it easier for the next
+              person) — especially with ML
+            </p>
+            {/* <p>
+              this fall, i'll be joining{" "}
+              <a
+                href="https://www.theglobeandmail.com/"
+                target="_blank"
+                className="inline-flex items-center mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
+              >
+                The Globe & Mail
+              </a>
+              to build agents that help editors move faster
+            </p> */}
           </div>
 
           {/* Contact Links */}
