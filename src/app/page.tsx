@@ -21,7 +21,7 @@ const workExperience = [
   //   title: "software engineer intern",
   //   role: "working on robots",
   //   period: "incoming summer 2026",
-  //   company: "Amazon Robotics",
+  //   company: "Amazon Robotics • internship",
   //   link: "https://www.aboutamazon.com/news/tag/robotics",
   // },
   // {
@@ -30,7 +30,7 @@ const workExperience = [
   //   title: "machine learning intern",
   //   role: "working on agents for news outlets",
   //   period: "incoming fall 2025",
-  //   company: "The Globe & Mail",
+  //   company: "The Globe & Mail • internship",
   //   link: "https://www.theglobeandmail.com/",
   // },
   {
@@ -39,16 +39,16 @@ const workExperience = [
     title: "machine learning engineer",
     role: "working on perception for a self-driving car design team",
     period: "present",
-    company: "WATonomous",
+    company: "WATonomous • design team",
     link: "https://www.watonomous.ca/",
   },
   {
     logo: "images/legacy-logo.png",
     hoverLogo: "images/legacy-logo-hover.png",
     title: "machine learning engineer",
-    role: "contracted with a startup to build tools that give clinicians real-time feedback during appointments",
+    role: "worked on models that give clinicians real-time feedback during appointments",
     period: "may 2025",
-    company: "Legacy",
+    company: "Legacy • contract",
     link: "https://www.legacytheapp.com/",
   },
   {
@@ -57,7 +57,7 @@ const workExperience = [
     title: "machine learning engineer",
     role: "built agents to automate product management tasks",
     period: "2024 - 2025",
-    company: "Mimrr",
+    company: "Mimrr • part-time",
     link: "https://www.linkedin.com/company/mimrrhq/about/",
   },
   {
@@ -66,7 +66,7 @@ const workExperience = [
     title: "software engineer intern",
     role: "optimized EHR infra & worked on distributed database systems to handle millions of patient records",
     period: "winter 2025",
-    company: "PointClickCare",
+    company: "PointClickCare • internship",
     link: "https://pointclickcare.com/products/",
   },
   {
@@ -75,7 +75,7 @@ const workExperience = [
     title: "web developer intern",
     role: "built websites & automated web-dev processes with ML",
     period: "summer 2024",
-    company: "Generis",
+    company: "Generis • internship",
     link: "https://generisgp.com/",
   },
 ];
@@ -95,7 +95,7 @@ const projects = [
     name: "siren",
     link: "https://github.com/pearl-natalia/Siren/blob/master/README.md",
     description:
-      "an powered dash cam to monitor driving behavior using computer vision and geolocation processing",
+      "an AI-powered dash cam to monitor driving behavior using computer vision and geolocation processing",
     tech: "embedded AI • YOLOv8",
   },
   {
@@ -149,7 +149,7 @@ export default function Home() {
               person) — especially with ML
             </p>
             <p>
-              i&apos;m currently studying software engineering at{" "}
+              i study software engineering at{" "}
               <a
                 href="https://se-webring.xyz/"
                 target="_blank"
@@ -165,9 +165,15 @@ export default function Home() {
               {/* and am studying abroad in Spain this winter at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
-                className="mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
+                target="_blank"
+                className="inline-flex items-center mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
               >
                 UNavarra
+                <img
+                  src="images/plane.png"
+                  alt="Plane icon"
+                  className="ml-2 w-5 h-5"
+                />
               </a> */}
             </p>
           </div>
