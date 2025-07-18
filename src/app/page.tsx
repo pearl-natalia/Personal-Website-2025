@@ -18,64 +18,64 @@ const workExperience = [
   // {
   //   logo: "images/amazon-logo.png",
   //   hoverLogo: "images/amazon-logo-hover.png",
-  //   title: "Amazon Robotics",
+  //   company: "Amazon Robotics",
   //   role: "making robots move",
   //   period: "incoming summer 2026",
-  //   company: "software developer • internship",
+  //   title: "software developer • internship",
   //   link: "https://www.aboutamazon.com/news/tag/robotics",
   // },
   // {
   //   logo: "images/globe-logo.png",
   //   hoverLogo: "images/globe-logo-hover.png",
-  //   title: "The Globe & Mail",
+  //   company: "The Globe & Mail",
   //   role: "building agents for news outlets",
   //   period: "incoming fall 2025",
-  //   company: "machine learning • internship",
+  //   title: "machine learning • internship",
   //   link: "https://www.theglobeandmail.com/",
   // },
   {
     logo: "images/wato-logo.png",
     hoverLogo: "images/wato-logo-hover.png",
-    title: "WATonomous",
+    company: "WATonomous",
     role: "working on perception for a self-driving car design team",
     period: "present",
-    company: "machine learning • design team",
+    title: "machine learning • design team",
     link: "https://www.watonomous.ca/",
   },
   {
     logo: "images/legacy-logo.png",
     hoverLogo: "images/legacy-logo-hover.png",
-    title: "Legacy",
+    company: "Legacy",
     role: "worked on models that give clinicians real-time feedback during appointments",
     period: "may 2025",
-    company: "machine learning • contract",
+    title: "machine learning • contract",
     link: "https://www.legacytheapp.com/",
   },
   {
     logo: "images/mimrr-logo.png",
     hoverLogo: "images/mimrr-logo-hover.png",
-    title: "Mimrr",
+    company: "Mimrr",
     role: "built agents to automate product management tasks",
     period: "2024 - 2025",
-    company: "machine learning • part-time",
+    title: "machine learning • contract",
     link: "https://www.linkedin.com/company/mimrrhq/about/",
   },
   {
     logo: "images/pcc-logo.png",
     hoverLogo: "images/pcc-logo-hover.png",
-    title: "PointClickCare",
+    company: "PointClickCare",
     role: "optimized EHR infra & worked on distributed database systems to handle millions of patient records",
     period: "winter 2025",
-    company: "software developer • internship",
+    title: "software developer • internship",
     link: "https://pointclickcare.com/products/",
   },
   {
     logo: "images/generis-logo.png",
     hoverLogo: "images/generis-logo-hover.png",
-    title: "Generis Global Partners",
+    company: "Generis Global Partners",
     role: "built websites & automated web-dev processes with ML",
     period: "summer 2024",
-    company: "web developer • internship",
+    title: "web developer • internship",
     link: "https://generisgp.com/",
   },
 ];
@@ -173,8 +173,8 @@ export default function Home() {
             </p>
             <p>
               i love to learn by building, automate the boring stuff, and figure
-              things out the hard way (then making it easier for the next
-              person) — especially with ML
+              things out the hard way (then make it easier for the next person)
+              — especially with ML
             </p>
             {/* <p>
               this fall, i'll be joining{" "}
@@ -185,7 +185,7 @@ export default function Home() {
               >
                 The Globe & Mail
               </a>
-              to build agents that help editors move faster
+              to build agents that help editors move faster!
             </p> */}
           </div>
 
@@ -249,19 +249,21 @@ export default function Home() {
                     }
                     <div>
                       <h3 className="text-xl font-medium mb-1 group-hover:text-blue-700 transition-colors">
-                        {title}
+                        <a
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group-hover:text-blue-700 hover:underline transition-colors"
+                        >
+                          {company}
+                        </a>
                       </h3>
                       <p className="text-gray-700 group-hover:text-blue-700 mb-1 transition-colors">
                         {role}
                       </p>
-                      <a
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="italic group-hover:text-blue-700 hover:underline transition-colors text-sm"
-                      >
-                        {company}
-                      </a>
+                      <p className="italic text-gray-700 group-hover:text-blue-700 mb-1 transition-colors">
+                        {title}
+                      </p>
                     </div>
                   </div>
                   <span className="text-gray-600 group-hover:text-blue-700 text-sm mt-2 pl-10 sm:mt-1 sm:pl-0 transition-colors">
