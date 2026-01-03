@@ -24,21 +24,21 @@ const workExperience = [
   //   title: "software developer • internship",
   //   link: "https://www.aboutamazon.com/news/tag/robotics",
   // },
-  // {
-  //   logo: "images/globe-logo.png",
-  //   hoverLogo: "images/globe-logo-hover.png",
-  //   company: "The Globe & Mail",
-  //   role: "building agents for news outlets",
-  //   period: "incoming fall 2025",
-  //   title: "machine learning • internship",
-  //   link: "https://www.theglobeandmail.com/",
-  // },
+  {
+    logo: "images/globe-logo.png",
+    hoverLogo: "images/globe-logo-hover.png",
+    company: "The Globe and Mail",
+    role: "building agents for news outlets",
+    period: "fall 2025",
+    title: "machine learning • internship",
+    link: "https://www.theglobeandmail.com/",
+  },
   {
     logo: "images/wato-logo.png",
     hoverLogo: "images/wato-logo-hover.png",
     company: "WATonomous",
     role: "working on perception for a self-driving car design team",
-    period: "present",
+    period: "winter 2025",
     title: "machine learning • design team",
     link: "https://www.watonomous.ca/",
   },
@@ -157,7 +157,7 @@ export default function Home() {
                   className="ml-2 w-5 h-5"
                 />
               </a>
-              {/* and will be studying abroad in Spain this winter at{" "}
+              and will be studying Machine Learning abroad in Spain this winter at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 target="_blank"
@@ -169,24 +169,24 @@ export default function Home() {
                   alt="Plane icon"
                   className="ml-2 w-5 h-5"
                 />
-              </a> */}
+              </a>
             </p>
             <p>
               i love to learn by building, automate the boring stuff, and figure
               things out the hard way (then make it easier for the next person)
               — especially with ML
             </p>
-            {/* <p>
-              this fall, i'll be joining{" "}
+            <p>
+              previously, I interned at{" "}
               <a
                 href="https://www.theglobeandmail.com/"
                 target="_blank"
                 className="inline-flex items-center mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
               >
-                The Globe & Mail
+                The Globe and Mail
               </a>
-              to build agents that help editors move faster!
-            </p> */}
+              to build models and agents that help journalists report faster!
+            </p>
           </div>
 
           {/* Contact Links */}
