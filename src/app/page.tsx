@@ -157,7 +157,7 @@ export default function Home() {
                   className="ml-2 w-5 h-5"
                 />
               </a>
-              and will be studying Machine Learning abroad in Spain this winter at{" "}
+              and will be studying machine learning abroad in Spain this winter at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 target="_blank"
