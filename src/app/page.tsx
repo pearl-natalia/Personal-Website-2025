@@ -1,3 +1,4 @@
+"use client";
 import {
   Mail,
   Github,
@@ -8,6 +9,7 @@ import {
   Shield,
   HandCoins,
 } from "lucide-react";
+
 // E! change font here to name
 import { Shantell_Sans } from "next/font/google";
 
@@ -157,7 +159,8 @@ export default function Home() {
                   className="ml-2 w-5 h-5"
                 />
               </a>
-              and will be studying machine learning abroad in Spain this winter at{" "}
+              and will be studying machine learning abroad in Spain this winter
+              at{" "}
               <a
                 href="https://en.tecnun.unav.edu/"
                 target="_blank"
