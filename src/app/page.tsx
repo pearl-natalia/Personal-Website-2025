@@ -17,15 +17,15 @@ const headerFont = Shantell_Sans({ weight: "400", subsets: ["latin"] });
 
 // Data for work experience
 const workExperience = [
-  // {
-  //   logo: "images/amazon-logo.png",
-  //   hoverLogo: "images/amazon-logo-hover.png",
-  //   company: "Amazon Robotics",
-  //   role: "making robots move",
-  //   period: "incoming summer 2026",
-  //   title: "software developer • internship",
-  //   link: "https://www.aboutamazon.com/news/tag/robotics",
-  // },
+  {
+    logo: "images/carebrain-logo.png",
+    hoverLogo: "images/carebrain-logo-hover.png",
+    company: "Carebrain",
+    role: "building AI scribes for healthcare workers",
+    period: "summer 2026",
+    title: "applied AI • internship",
+    link: "https://www.carebrain.com/",
+  },
   {
     logo: "images/globe-logo.png",
     hoverLogo: "images/globe-logo-hover.png",
@@ -34,15 +34,6 @@ const workExperience = [
     period: "fall 2025",
     title: "machine learning • internship",
     link: "https://www.theglobeandmail.com/",
-  },
-  {
-    logo: "images/wato-logo.png",
-    hoverLogo: "images/wato-logo-hover.png",
-    company: "WATonomous",
-    role: "working on perception for a self-driving car design team",
-    period: "winter 2025",
-    title: "machine learning • design team",
-    link: "https://www.watonomous.ca/",
   },
   {
     logo: "images/legacy-logo.png",
@@ -146,7 +137,7 @@ export default function Home() {
           </h1>
           <div className="max-w-3xl space-y-4 text-lg text-gray-800">
             <p>
-              i study software engineering at{" "}
+              i study Software Engineering at{" "}
               <a
                 href="https://se-webring.xyz/"
                 target="_blank"
@@ -156,28 +147,27 @@ export default function Home() {
                 <img
                   src="images/black-goose.png"
                   alt="Goose icon"
-                  className="ml-2 w-5 h-5"
+                  className="ml-2 inline-block align-middle w-5 h-5"
                 />
               </a>
-              and will be studying machine learning abroad in Spain this winter
-              at{" "}
-              <a
-                href="https://en.tecnun.unav.edu/"
-                target="_blank"
-                className="inline-flex items-center mr-1 text-blue-700 hover:underline hover:text-blue-900 transition-colors"
-              >
-                UNavarra
-                <img
-                  src="images/plane.png"
-                  alt="Plane icon"
-                  className="ml-2 w-5 h-5"
-                />
-              </a>
+              , recently studied Machine Learning in Spain for a semester
+              <img
+                src="images/plane.png"
+                alt="Plane icon"
+                className="inline-block align-middle ml-2 w-5 h-5"
+              />
+              , and am currently based in SF for the summer
+              <img
+                src="images/cable-car.png"
+                alt="Cable car icon"
+                className="inline-block align-middle ml-2 w-5 h-5"
+              />
             </p>
             <p>
-              i love to learn by building, automate the boring stuff, and figure
-              things out the hard way (then make it easier for the next person)
-              — especially with ML
+              I enjoy automating tedious tasks and solving problems from
+              first principles, then making things easier for the next person. A lot
+              of my work is at the intersection of ML and health tech. Outside
+              of work, I spend as much time as I can travelling.
             </p>
             <p>
               previously, I interned at{" "}
