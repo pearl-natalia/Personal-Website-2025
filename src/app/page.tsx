@@ -164,10 +164,8 @@ export default function Home() {
               />
             </p>
             <p>
-              I enjoy automating tedious tasks and solving problems from
-              first principles, then making things easier for the next person. A lot
-              of my work is at the intersection of ML and health tech. Outside
-              of work, I spend as much time as I can travelling.
+              i enjoy automating tedious tasks and solving problems from
+              first principles, then making things easier for the next person.
             </p>
             <p>
               previously, I interned at{" "}
